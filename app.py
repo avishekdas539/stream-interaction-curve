@@ -53,7 +53,7 @@ if btn:
         form.warning("Please Enter Characteristic Strength of Concrete More Than Zero")
     if not fy:
         form.warning("Please Enter Characteristic Strength of Steel More Than Zero")
-    rd = 1 if rd=="Equally Distributed in Each Four Sides" else 0
+    rd = 0 if rd=="Equally Distributed in Each Four Sides" else 1
     # if oldfileid!="":
     #     os.remove(oldfileid)
     psByFck = [0.02,0.04,0.06,0.08,0.1,0.12,0.14,0.16,0.18,0.2,0.22,0.24]
