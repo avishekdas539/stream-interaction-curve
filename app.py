@@ -35,6 +35,12 @@ rd = form.selectbox(
 btn = form.form_submit_button("Generate Plot")
 # oldfileid = ""
 # fileid = ""
+
+st.write('''Disclaimer:
+1. This charts are prepared by following the SP 16 : 1980.
+2. This tables are based on purely canculative basis.
+3. No lab testing has being performed while calculating these data points.
+4. The risk of using these are on the user.''')
 st.write("©️ Copyright - All Rights Reserved Avishek Das 2024")
 if btn:
     if not d:
